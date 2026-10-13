@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: my-flask-app
+    container_name: my-flask-app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
